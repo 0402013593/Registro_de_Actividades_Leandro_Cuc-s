@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">Sistema de Registro de Actividades</string>
+
+    // inicio de cecion
+
+    <string name="txt_usuario">Correo Electrónico</string>
+    <string name="txt_contraseña">Contraseña</string>
+    <string name="txt_confircontraseña">Confirmar contraseña</string>
+
+
+    // botones menu de usuario
+
+    <string name="btn_irreu">Reuniones</string>
+    <string name="btn_irproy">Gestión de Proyectos</string>
+    <string name="btn_irentre">Entrevistas</string>
+    <string name="btn_irconfe">Conferencias</string>
+    <string name="btn_irinves">Investigación</string>
+
+    //botones de inicio y registro y fin
+
+    <string name="btn_iniciar">Iniciar sesión</string>
+    <string name="btn_registrarse">Regístrarse</string>
+    <string name="btn_finSecion">Salir</string>
+
+    //boton guardar datos
+
+    <string name="btn_guardar">Guardar</string>
+
+    <string name="formato">(DD/MM/YYYY)</string>
+
+    //datos reuniones
+
+    <string name="txt_tiempo">Duración de la reunión en minutos</string>
+    <string name="txt_tematica">Temática </string>
+    <string name="txt_direccion">Dirección</string>
+    <string name="txt_Nintegrantes">Número de integrantes</string>
+    <string name="txt_Nota">Recordatorio o comentario</string>
+    <string name="txt_Satisfaccion">Satisfacción</string>
+    <string name="txt_fecha">Fecha</string>
+
+
+    //datos gestion de proyectos
+
+    <string name="txt_area">Área de Trabajo</string>
+    <string name="txt_jefe">Jefe del Proyecto</string>
+    <string name="txt_actividad">Nombre del Proyecto</string>
+    <string name="txt_horas">Horas empleadas o por emplear</string>
+    <string name="txt_fechain">Fecha de inicio (DD/MM/YYYY)</string>
+    <string name="txt_fechafin">Fecha de finalizacion (DD/MM/YYYY)</string>
+    <string name="txt_costo">Costo estimado en dólares</string>
+    <string name="txt_nota">Notas o recordatorio</string>
+
+
+    //Datos Entrevistas
+
+    <string name="txte_nombre">Nombre completo</string>
+    <string name="txte_edad">Edad</string>
+    <string name="txte_Telefono">Teléfono</string>
+    <string name="txte_correo">Correo electrónico</string>
+    <string name="txte_situacion">Situación laboral</string>
+    <string name="txte_educacion">Nivel de educación</string>
+    <string name="txte_horas">Horas de experiencia laboral</string>
+    <string name="txte_idioma">Idiomas</string>
+    <string name="txte_otras">Otras habilidades</string>
+    <string name="txte_notas">Observaciones y comentarios</string>
+
+    //Datos Conferencias
+
+    <string name="txtco_nombreeve">Nombre del evento</string>
+    <string name="txtco_nombrepo">Nombre del ponente</string>
+    <string name="txtco_tema">Temática de la ponencia</string>
+    <string name="txtco_lugar">Lugar del evento</string>
+    <string name="txtco_duracion">Duración de la ponencia en minutos</string>
+
+
+
+    // Datos Investigacion
+
+    <string name="txt_titulo">Título del proyecto o tema de investigación</string>
+    <string name="txt_objetivo">Objetivo general</string>
+    <string name="txt_metodologia">Metodología a implementar</string>
+    <string name="txt_areade">Área de trabajo</string>
+    <string name="txt_avance">Avance</string>
+    <string name="txt_resultados">Resultados obtenidos</string>
+    <string name="txt_recomendaciones">Recomendaciones</string>
+    <string name="txt_presupuesto">Presupuesto en dólares</string>
+
+
+</resources>

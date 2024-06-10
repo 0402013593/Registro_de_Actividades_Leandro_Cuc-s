@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Operation</title>
+    <link rel="stylesheet" href="estilostabla.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">Reuniones</a>
+        </div>
+        <ul class="nav-links">
+            <li> <a href="#" id="datosmapa">Ver Datos en Mapa</a></li>
+            <li><a href="#" id="logout">Cerrar sesión</a></li>
+        </ul>
+    </nav>
+
+
+
+
+    
+    <div class="wrapper">
+        <table id="crud">
+            <caption>Reuniones</caption>
+            <thead>
+                <tr>
+                    <td>Fecha</td>
+                    <td>Tiempo transcurrido</td>
+                    <td>Hora</td>
+                    <td>N.Integrantes</td>
+                    <td>Personas presentes</td>
+                    <td>Personas ausentes</td>
+                    <td>Resumen</td>
+                    <td>Temática</td>
+                    <td>Latitud</td>
+                    <td>Longitud</td>
+                    <td>Notas</td>
+                    <td>Opciones del registro</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>D/MM/AAAA</td>
+                    <td>0.0</td>
+                    <td>H:m</td>
+                    <td>0</td>
+                    <td>Nombres</td>
+                    <td>Nombres</td>
+                    <td>Resumen</td>
+                    <td>Temática</td>
+                    <td>0.11226565</td>
+                    <td>-51.51561</td>
+                    <td> notas </td>
+                    <td>
+                        <button class="edit">Editar</button>
+                        <button class="delete">Borrar registro</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="add-user">Agregar registro</button>
+    </div>
+    <div class="popup add" id="agregar">
+        <form class="scrollable-form" action="">
+            <input type="text" placeholder="Fecha" name="fecha">
+            <input type="text" placeholder="Tiempo transcurrido" name="crono">
+            <input type="text" placeholder="Hora" name="hora">
+            <input type="text" placeholder="Integrantes" name="integrantes">
+            <input type="text" placeholder="Personas Presentes" name="personasPresentes">
+            <input type="text" placeholder="Personas Ausentes" name="personasAusentes">
+            <input type="text" placeholder="Resumen" name="resumen">
+            <input type="text" placeholder="Temática" name="tematica">
+            <input type="text" placeholder="Latitud" name="latitud">
+            <input type="text" placeholder="Longitud" name="longitud">
+            <input type="text" placeholder="Notas" name="notas">
+            <input type="submit" value="Agregar" >
+        </form>
+    </div>
+
+    <div class="popup update" id="eliminar">
+        <form class="scrollable-form" action="">
+            <input type="text" placeholder="Fecha" name="fecha">
+            <input type="text" placeholder="Tiempo transcurrido" name="crono">
+            <input type="text" placeholder="Hora" name="hora">
+            <input type="text" placeholder="Integrantes" name="integrantes">
+            <input type="text" placeholder="Personas Presentes" name="personasPresentes">
+            <input type="text" placeholder="Personas Ausentes" name="personasAusentes">
+            <input type="text" placeholder="Resumen" name="resumen">
+            <input type="text" placeholder="Temática" name="tematica">
+            <input type="text" placeholder="Latitud" name="latitud">
+            <input type="text" placeholder="Longitud" name="longitud">
+            <input type="text" placeholder="Notas" name="notas">
+            <input type="submit" value="Guardar" >
+        </form>
+    </div>
+
+    <!--Firebase -->
+
+
+     
+        <!--// Import the functions you need from the SDKs you need-->
+        <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+        <!--// TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries-->
+
+        <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
+        
+        <script >
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+    apiKey: "AIzaSyD5EKqZEoIc8W7Tcszu9qZ3VYtfbX85nD0",
+    authDomain: "analisisdedatos-1762c.firebaseapp.com",
+    databaseURL: "https://analisisdedatos-1762c-default-rtdb.firebaseio.com",
+    projectId: "analisisdedatos-1762c",
+    storageBucket: "analisisdedatos-1762c.appspot.com",
+    messagingSenderId: "207569230055",
+    appId: "1:207569230055:web:0bbed22a0b2244e855aa42"
+  };
+      
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+        
+      </script>
+
+
+
+ 
+    <script src="./datosReuniones.js"></script>
+</body>
+</html>
